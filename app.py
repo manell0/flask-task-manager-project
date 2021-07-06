@@ -52,6 +52,7 @@ def register():
     return render_template("register.html")
 
 
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -96,12 +97,10 @@ def profile(username):
 @app.route("/logout")
 def logout():
     # remove user from session cookie
-    flash("You have been logged out")
-    #session.pop("user")
+    # session.pop("user")
     session.clear()
+    flash("You have been logged out")
     return redirect(url_for("login"))
-
-
 
 
 if __name__ == "__main__":
