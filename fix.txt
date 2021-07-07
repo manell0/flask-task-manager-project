@@ -1,3 +1,9 @@
 pip3 install Flask
 pip3 install flask_pymongo
 pip3 install pymongo[srv]
+-------------------------------
+https://cloud.mongodb.com/
+https://id.heroku.com/login
+https://materializecss.com/
+https://code.jquery.com/
+https://cdnjs.com/libraries/font-awesome
