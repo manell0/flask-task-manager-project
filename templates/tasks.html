@@ -7,9 +7,9 @@
         <li>
           <div class="collapsible-header white-text light-blue darken-4 text-shadow">
               <div class="col s3">
-                  <i class="fas fa-carret-down"></i>
+                  <i class="fas fa-caret-down"></i>
                   <a class="waves-effect btn-small green accent-4">Done</a>
-                  <a class="waves-effect btn-small light-blue lighten-1">Edit</a>
+                  <a href="{{ url_for('edit_task', task_id=task._id) }}" class="waves-effect btn-small light-blue lighten-1">Edit</a>
               </div>
               <div class="col s9">
                     <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
