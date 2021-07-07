@@ -99,7 +99,6 @@ def logout():
     session.clear()
     flash("You have been logged out")
     # session.pop("user")
-    
     return redirect(url_for("login"))
 
 
